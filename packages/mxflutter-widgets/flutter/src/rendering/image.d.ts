@@ -1,0 +1,45 @@
+import { ImageRepeat } from '../painting/decoration-image';
+import { BoxFit } from '../painting/box-fit';
+import { Image, ColorFilter, Color, FilterQuality, BlendMode, Rect, TextDirection } from '../../../mx-dart-sdk';
+import { Alignment, AlignmentGeometry } from '../painting/alignment';
+import { RenderBox } from './box';
+declare class RenderImage extends RenderBox {
+    resolvedAlignment: Alignment;
+    flipHorizontally: boolean;
+    image: Image;
+    debugImageLabel: string;
+    width: number;
+    height: number;
+    scale: number;
+    colorFilter: ColorFilter;
+    color: Color;
+    filterQuality: FilterQuality;
+    colorBlendMode: BlendMode;
+    fit: BoxFit;
+    alignment: AlignmentGeometry;
+    repeat: ImageRepeat;
+    centerSlice: Rect;
+    invertColors: boolean;
+    matchTextDirection: boolean;
+    textDirection: TextDirection;
+    isAntiAlias: boolean;
+    constructor(namedParameters?: {
+        image?: Image;
+        debugImageLabel?: string;
+        width?: number;
+        height?: number;
+        scale?: number;
+        color?: Color;
+        colorBlendMode?: BlendMode;
+        fit?: BoxFit;
+        alignment?: AlignmentGeometry;
+        repeat?: ImageRepeat;
+        centerSlice?: Rect;
+        matchTextDirection?: boolean;
+        textDirection?: TextDirection;
+        invertColors?: boolean;
+        isAntiAlias?: boolean;
+        filterQuality?: FilterQuality;
+    });
+}
+export { RenderImage };

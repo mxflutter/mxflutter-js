@@ -1,0 +1,26 @@
+{
+  "name": "@mxflutter/mxflutter-widgets",
+  "version": "0.8.0",
+  "description": "",
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/mxflutter/mxflutter-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxflutter/mxflutter-js.git"
+  },
+  "scripts": {
+    "clean": "rm -rf ./*.js && rm -rf ./*.d.ts && rm -rf ./flutter",
+    "build": "npm run clean && tsc --project ./tsconfig.json",
+    "build:es5": "npm run clean && tsc --project ./tsconfig.es5.json"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@mxflutter/mxflutter-base": "0.8.0",
+    "tslib": "^2.0.3"
+  }
+}

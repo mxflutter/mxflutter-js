@@ -1,0 +1,22 @@
+//  MXFlutterFramework
+//  Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
+//  Use of this source code is governed by a BSD-style license that can be
+//  found in the LICENSE file.
+import { ImplicitlyAnimatedWidget, AnimatedWidgetBaseState } from './implicit-animations';
+class TweenAnimationBuilder extends ImplicitlyAnimatedWidget {
+    constructor(namedParameters = {}) {
+        super();
+        this.key = namedParameters.key;
+        this.tween = namedParameters.tween;
+        this.duration = namedParameters.duration;
+        this.curve = namedParameters.curve;
+        this.builder = namedParameters.builder;
+        this.onEnd = namedParameters.onEnd;
+        this.child = namedParameters.child;
+        this.className = 'TweenAnimationBuilder';
+    }
+}
+export { TweenAnimationBuilder };
+class _TweenAnimationBuilderState extends AnimatedWidgetBaseState {
+}
+export { _TweenAnimationBuilderState };

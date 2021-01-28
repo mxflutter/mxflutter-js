@@ -1,0 +1,68 @@
+import { ScrollPhysics } from '../widgets/scroll-physics';
+import { EdgeInsets } from '../painting/edge-insets';
+import { TextAlignVertical } from '../painting/alignment';
+import { TextDirection, TextAlign, Radius, Color, Brightness } from '../../../mx-dart-sdk';
+import { StrutStyle } from '../painting/strut-style';
+import { TextStyle } from '../painting/text-style';
+import { TextInputType, TextCapitalization, TextInputAction, SmartDashesType, SmartQuotesType } from '../services/text-input';
+import { InputDecoration } from './input-decorator';
+import { FocusNode } from '../widgets/focus-manager';
+import { Key } from '../foundation/key';
+import { TextEditingController, ToolbarOptions } from '../widgets/editable-text';
+import { FormField, FormFieldState } from '../widgets/form';
+declare class TextFormField extends FormField {
+    controller: TextEditingController;
+    constructor(namedParameters?: {
+        key?: Key;
+        controller?: TextEditingController;
+        initialValue?: string;
+        focusNode?: FocusNode;
+        decoration?: InputDecoration;
+        keyboardType?: TextInputType;
+        textCapitalization?: TextCapitalization;
+        textInputAction?: TextInputAction;
+        style?: TextStyle;
+        strutStyle?: StrutStyle;
+        textDirection?: TextDirection;
+        textAlign?: TextAlign;
+        textAlignVertical?: TextAlignVertical;
+        autofocus?: boolean;
+        readOnly?: boolean;
+        toolbarOptions?: ToolbarOptions;
+        showCursor?: boolean;
+        obscuringCharacter?: string;
+        obscureText?: boolean;
+        autocorrect?: boolean;
+        smartDashesType?: SmartDashesType;
+        smartQuotesType?: SmartQuotesType;
+        enableSuggestions?: boolean;
+        autovalidate?: boolean;
+        maxLengthEnforced?: boolean;
+        maxLines?: number;
+        minLines?: number;
+        expands?: boolean;
+        maxLength?: number;
+        onChanged?: any;
+        onTap?: any;
+        onEditingComplete?: any;
+        onFieldSubmitted?: any;
+        onSaved?: any;
+        validator?: any;
+        inputFormatters?: Array<any>;
+        enabled?: boolean;
+        cursorWidth?: number;
+        cursorRadius?: Radius;
+        cursorColor?: Color;
+        keyboardAppearance?: Brightness;
+        scrollPadding?: EdgeInsets;
+        enableInteractiveSelection?: boolean;
+        buildCounter?: any;
+        scrollPhysics?: ScrollPhysics;
+        autofillHints?: any;
+    });
+}
+export { TextFormField };
+declare class _TextFormFieldState extends FormFieldState {
+    controller: TextEditingController;
+}
+export { _TextFormFieldState };

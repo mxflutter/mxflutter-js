@@ -1,0 +1,42 @@
+{
+  "name": "@mxflutter/mxflutter-toolchain",
+  "version": "0.8.0",
+  "description": "devtool cli",
+  "keywords": [],
+  "homepage": "https://github.com/mxflutter/mxflutter-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxflutter/mxflutter-js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "bin": {
+    "mxflutter": "./bin/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "build": "node ./bin/cli.js bootstrap --env production --out ../../release",
+    "build:es5": "node ./bin/cli.js bootstrap --target es5 --env production --out ../../release",
+    "build:dev": "node ./bin/cli.js bootstrap --out ../../release"
+  },
+  "dependencies": {
+    "@mxflutter/generator-mxflutter": "0.8.0",
+    "@mxflutter/mxflutter": "0.8.0",
+    "@mxflutter/mxflutter-base": "0.8.0",
+    "@mxflutter/mxflutter-widgets": "0.8.0",
+    "commander": "^6.1.0",
+    "terser-webpack-plugin": "^5.0.0",
+    "ts-loader": "^8.0.1",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^4.0.2",
+    "webpack": "^5.1.3",
+    "webpack-merge": "^5.0.9",
+    "yeoman-environment": "^2.3.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "typescript": "^4.0.2"
+  }
+}

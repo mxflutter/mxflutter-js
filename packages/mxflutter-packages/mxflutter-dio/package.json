@@ -1,0 +1,23 @@
+{
+  "name": "@mxflutter/mxflutter-dio",
+  "version": "0.8.0",
+  "description": "",
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc --project ./tsconfig.json",
+    "build:es5": "npm run clean && tsc --project ./tsconfig.es5.json"
+  },
+  "license": "MIT",
+  "contributors": [
+    "mxflutter <mxflutter@qq.com>"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@mxflutter/mxflutter": "0.8.0"
+  }
+}

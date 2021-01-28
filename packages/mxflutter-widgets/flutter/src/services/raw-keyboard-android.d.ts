@@ -1,0 +1,46 @@
+import { RawKeyEventData } from './raw-keyboard';
+declare class RawKeyEventDataAndroid extends RawKeyEventData {
+    flags: number;
+    codePoint: number;
+    plainCodePoint: number;
+    keyCode: number;
+    scanCode: number;
+    metaState: number;
+    eventSource: number;
+    vendorId: number;
+    productId: number;
+    deviceId: number;
+    repeatCount: number;
+    constructor(namedParameters?: {
+        flags?: number;
+        codePoint?: number;
+        plainCodePoint?: number;
+        keyCode?: number;
+        scanCode?: number;
+        metaState?: number;
+        eventSource?: number;
+        vendorId?: number;
+        productId?: number;
+        deviceId?: number;
+        repeatCount?: number;
+    });
+    static get modifierNone(): number;
+    static get modifierAlt(): number;
+    static get modifierLeftAlt(): number;
+    static get modifierRightAlt(): number;
+    static get modifierShift(): number;
+    static get modifierLeftShift(): number;
+    static get modifierRightShift(): number;
+    static get modifierSym(): number;
+    static get modifierFunction(): number;
+    static get modifierControl(): number;
+    static get modifierLeftControl(): number;
+    static get modifierRightControl(): number;
+    static get modifierMeta(): number;
+    static get modifierLeftMeta(): number;
+    static get modifierRightMeta(): number;
+    static get modifierCapsLock(): number;
+    static get modifierNumLock(): number;
+    static get modifierScrollLock(): number;
+}
+export { RawKeyEventDataAndroid };

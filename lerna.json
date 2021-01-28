@@ -1,0 +1,97 @@
+{
+  "version": "0.8.0",
+  "packages": [
+    "packages/mxflutter-base",
+    "packages/mxflutter",
+    "packages/mxflutter-widgets",
+    "packages/generator-mxflutter",
+    "packages/mxflutter-toolchain",
+    "packages/mxflutter-packages/mxflutter-cached-network-image",
+    "packages/mxflutter-packages/mxflutter-pull-to-refresh",
+    "packages/mxflutter-packages/mxflutter-dio"
+  ],
+  "command": {
+    "version": {
+      "allowBranch": [
+        "master"
+      ],
+      "exact": true,
+      "amend": false,
+      "conventionalCommits": true,
+      "changelogPreset": {
+        "name": "conventionalcommits",
+        "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+        "issuePrefixes": [
+          "##"
+        ],
+        "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+        "userUrlFormat": "{{host}}/{{user}}",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {
+            "type": "perf",
+            "section": "Performance Improvements"
+          },
+          {
+            "type": "revert",
+            "section": "Reverts"
+          },
+          {
+            "type": "docs",
+            "section": "Documentation",
+            "hidden": true
+          },
+          {
+            "type": "style",
+            "section": "Styles",
+            "hidden": true
+          },
+          {
+            "type": "chore",
+            "section": "Miscellaneous Chores",
+            "hidden": true
+          },
+          {
+            "type": "refactor",
+            "section": "Code Refactoring",
+            "hidden": true
+          },
+          {
+            "type": "test",
+            "section": "Tests",
+            "hidden": true
+          },
+          {
+            "type": "build",
+            "section": "Build System",
+            "hidden": true
+          },
+          {
+            "type": "ci",
+            "section": "Continuous Integration",
+            "hidden": true
+          }
+        ]
+      },
+      "message": "chore(release): publish"
+    },
+    "publish": {
+      "registry": "https://registry.npmjs.org"
+    },
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ],
+      "noCi": true
+    }
+  },
+  "npmClient": "npm"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@mxflutter/mxflutter",
+  "version": "0.8.0",
+  "description": "mxflutter js framework",
+  "keywords": [],
+  "homepage": "https://github.com/mxflutter/mxflutter-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxflutter/mxflutter-js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc --project ./tsconfig.json",
+    "build:es5": "npm run clean && tsc --project ./tsconfig.es5.json",
+    "dev": "tsc --watch --project ./tsconfig.json"
+  },
+  "dependencies": {
+    "@mxflutter/mxflutter-base": "0.8.0",
+    "@mxflutter/mxflutter-widgets": "0.8.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "typescript": "^4.0.2"
+  }
+}
