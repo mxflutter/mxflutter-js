@@ -1,0 +1,25 @@
+{
+  "name": "@mxflutter/mxflutter-pull-to-refresh",
+  "version": "0.9.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/mxflutter/mxflutter-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxflutter/mxflutter-js.git"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc --project ./tsconfig.json",
+    "build:es5": "npm run clean && tsc --project ./tsconfig.es5.json"
+  },
+  "license": "BSD",
+  "contributors": [
+    "mxflutter <mxflutter@qq.com>"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@mxflutter/mxflutter": "0.9.0"
+  }
+}

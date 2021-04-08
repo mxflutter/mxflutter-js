@@ -1,0 +1,17 @@
+"use strict";
+// Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Texture = void 0;
+const framework_1 = require("./framework");
+class Texture extends framework_1.LeafRenderObjectWidget {
+    constructor(namedParameters = {}) {
+        super();
+        this.key = namedParameters.key;
+        this.textureId = namedParameters.textureId;
+        this.filterQuality = namedParameters.filterQuality;
+        this.className = 'Texture';
+    }
+}
+exports.Texture = Texture;

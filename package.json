@@ -1,0 +1,22 @@
+{
+  "name": "mxflutter-js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna run clean && lerna clean",
+    "build": "lerna run build --stream",
+    "build:es5": "lerna run build:es5 --stream",
+    "test": "lerna run test --stream",
+    "dev": "lerna run dev --parallel",
+    "publish": "npm run lint && npm run build && lerna publish"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5",
+    "typescript": "^4.0.2",
+    "conventional-changelog-conventionalcommits": "^4.3.1"
+  }
+}

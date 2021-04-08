@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.base.es5",
+  "compilerOptions": {
+    "module": "ES2015",
+    "outDir": "./",
+    "rootDir": "src",
+    "baseUrl": "./",
+    "declaration": true,
+    "importHelpers": true,
+    "noEmitHelpers": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,86 @@
+import { Element } from '../widgets/framework';
+import { Color } from '../../../mx-dart-sdk';
+import { MXDartClass } from '@mxflutter/mxflutter-base';
+declare class CupertinoColors extends MXDartClass {
+    static get activeBlue(): CupertinoDynamicColor;
+    static get activeGreen(): CupertinoDynamicColor;
+    static get activeOrange(): CupertinoDynamicColor;
+    static get white(): Color;
+    static get black(): Color;
+    static get lightBackgroundGray(): Color;
+    static get extraLightBackgroundGray(): Color;
+    static get darkBackgroundGray(): Color;
+    static get inactiveGray(): CupertinoDynamicColor;
+    static get destructiveRed(): Color;
+    static get systemBlue(): CupertinoDynamicColor;
+    static get systemGreen(): CupertinoDynamicColor;
+    static get systemIndigo(): CupertinoDynamicColor;
+    static get systemOrange(): CupertinoDynamicColor;
+    static get systemPink(): CupertinoDynamicColor;
+    static get systemPurple(): CupertinoDynamicColor;
+    static get systemRed(): CupertinoDynamicColor;
+    static get systemTeal(): CupertinoDynamicColor;
+    static get systemYellow(): CupertinoDynamicColor;
+    static get systemGrey(): CupertinoDynamicColor;
+    static get systemGrey2(): CupertinoDynamicColor;
+    static get systemGrey3(): CupertinoDynamicColor;
+    static get systemGrey4(): CupertinoDynamicColor;
+    static get systemGrey5(): CupertinoDynamicColor;
+    static get systemGrey6(): CupertinoDynamicColor;
+    static get label(): CupertinoDynamicColor;
+    static get secondaryLabel(): CupertinoDynamicColor;
+    static get tertiaryLabel(): CupertinoDynamicColor;
+    static get quaternaryLabel(): CupertinoDynamicColor;
+    static get systemFill(): CupertinoDynamicColor;
+    static get secondarySystemFill(): CupertinoDynamicColor;
+    static get tertiarySystemFill(): CupertinoDynamicColor;
+    static get quaternarySystemFill(): CupertinoDynamicColor;
+    static get placeholderText(): CupertinoDynamicColor;
+    static get systemBackground(): CupertinoDynamicColor;
+    static get secondarySystemBackground(): CupertinoDynamicColor;
+    static get tertiarySystemBackground(): CupertinoDynamicColor;
+    static get systemGroupedBackground(): CupertinoDynamicColor;
+    static get secondarySystemGroupedBackground(): CupertinoDynamicColor;
+    static get tertiarySystemGroupedBackground(): CupertinoDynamicColor;
+    static get separator(): CupertinoDynamicColor;
+    static get opaqueSeparator(): CupertinoDynamicColor;
+    static get link(): CupertinoDynamicColor;
+}
+export { CupertinoColors };
+declare class CupertinoDynamicColor extends Color {
+    effectiveColor: Color;
+    debugLabel: string;
+    debugResolveContext: Element;
+    color: Color;
+    darkColor: Color;
+    highContrastColor: Color;
+    darkHighContrastColor: Color;
+    elevatedColor: Color;
+    darkElevatedColor: Color;
+    highContrastElevatedColor: Color;
+    darkHighContrastElevatedColor: Color;
+    constructor(namedParameters?: {
+        debugLabel?: string;
+        color?: Color;
+        darkColor?: Color;
+        highContrastColor?: Color;
+        darkHighContrastColor?: Color;
+        elevatedColor?: Color;
+        darkElevatedColor?: Color;
+        highContrastElevatedColor?: Color;
+        darkHighContrastElevatedColor?: Color;
+    });
+    static withBrightnessAndContrast(namedParameters?: {
+        debugLabel?: string;
+        color?: Color;
+        darkColor?: Color;
+        highContrastColor?: Color;
+        darkHighContrastColor?: Color;
+    }): CupertinoDynamicColor;
+    static withBrightness(namedParameters?: {
+        debugLabel?: string;
+        color?: Color;
+        darkColor?: Color;
+    }): CupertinoDynamicColor;
+}
+export { CupertinoDynamicColor };

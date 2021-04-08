@@ -1,0 +1,28 @@
+{
+  "name": "@mxflutter/generator-mxflutter",
+  "version": "0.9.0",
+  "description": "",
+  "main": "app/index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "files": [
+    "app"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "command-exists": "^1.2.8",
+    "mkdirp": "^1.0.4",
+    "path": "^0.12.7",
+    "yeoman-generator": "^4.11.0",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "typescript": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}

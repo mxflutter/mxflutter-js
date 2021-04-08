@@ -1,0 +1,16 @@
+import { Tolerance } from './flutter/src/physics/tolerance';
+import { SpringDescription, SpringType, SpringSimulation, ScrollSpringSimulation } from './flutter/src/physics/spring-simulation';
+import { Simulation } from './flutter/src/physics/simulation';
+import { GravitySimulation } from './flutter/src/physics/gravity-simulation';
+import { FrictionSimulation, BoundedFrictionSimulation } from './flutter/src/physics/friction-simulation';
+import { ClampedSimulation } from './flutter/src/physics/clamped-simulation';
+export { ClampedSimulation };
+export { FrictionSimulation };
+export { BoundedFrictionSimulation };
+export { GravitySimulation };
+export { Simulation };
+export { SpringDescription };
+export { SpringType };
+export { SpringSimulation };
+export { ScrollSpringSimulation };
+export { Tolerance };
