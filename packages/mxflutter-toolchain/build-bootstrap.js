@@ -26,10 +26,15 @@ module.exports = {
         filename: fileName,
       },
       module: {
-        rules: [{
-          test: /\.ts?$/,
-          loader: 'ts-loader',
-        }],
+        rules: [
+          {
+            test: /\.ts?$/,
+            loader: 'ts-loader',
+          },
+          {
+            test: /\.png?$/,
+            loader: 'flie-loader',
+          }],
       },
       plugins: [
         // 针对 ios jsc 进行 globalThis 兼容

@@ -15,7 +15,7 @@ const webpackCommonConfig = {
     chunkFilename: '[id].js',
   },
   resolve: {
-    extensions: ['.js', '.ts'],
+    extensions: ['.js', '.ts', '.png', '.jpg'],
     symlinks: true,
     modules: [path.resolve(process.cwd(), 'node_modules')],
   },

@@ -47,13 +47,19 @@ module.exports = {
         },
       ],
       module: {
-        rules: [{
-          test: /\.ts?$/,
-          loader: 'ts-loader',
-          options: {
-            configFile: path.resolve(process.cwd(), targetES5 ? 'tsconfig.es5.json' : 'tsconfig.json'),
+        rules: [
+          {
+            test: /\.ts?$/,
+            loader: 'ts-loader',
+            options: {
+              configFile: path.resolve(process.cwd(), targetES5 ? 'tsconfig.es5.json' : 'tsconfig.json'),
+            },
           },
-        }],
+          {
+            test: /\.png?$/,
+            loader: 'file-loader',
+          },
+        ],
       },
     };
 

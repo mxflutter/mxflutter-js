@@ -1,6 +1,6 @@
 {
   "name": "@mxflutter/mxflutter-toolchain",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "devtool cli",
   "keywords": [],
   "homepage": "https://github.com/mxflutter/mxflutter-js",
@@ -26,6 +26,7 @@
     "commander": "^6.1.0",
     "terser-webpack-plugin": "^5.0.0",
     "ts-loader": "^8.0.1",
+    "file-loader": "^6.2.0",
     "tsconfig-paths-webpack-plugin": "^3.3.0",
     "typescript": "^4.0.2",
     "webpack": "^5.1.3",
